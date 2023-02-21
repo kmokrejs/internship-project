@@ -1,0 +1,130 @@
+
+.comments-body{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    margin-top: 20px;
+    width: 80%;
+}
+
+.space{
+    height: 10px;
+    width: 100%;
+    background-color: rgb(64, 113, 244);
+}
+
+.create-comment{
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    width: 100%;
+}
+
+#commentInput{
+    border-bottom: 1px solid rgb(105, 105, 105);
+    border-left: none;
+    border-right:none;
+    border-top: none;
+    padding: 0;
+    margin-bottom: 10px;
+}
+
+.button-add{
+    background-color: rgb(64, 113, 244);
+    border: none;
+    color: white;
+    padding: 5px 10px 5px 10px;
+    font-weight: 500;
+    font-size: 14px;
+    font-family: 'Roboto', sans-serif;
+    border-radius: 5px;
+    cursor: pointer;
+    margin-bottom: 10px;
+}
+
+h2{
+    margin: 10px 0 0 0 ;
+    color: rgb(64, 113, 244);
+}
+
+
+.oneComment{
+    display: flex;
+    margin-top: 20px;
+    margin-bottom: 20px;
+    box-shadow: 0px 0px 10px 1px rgb(92, 92, 92);
+    border-radius: 8px;
+    width: 100%;
+}
+
+.comment-wrap{
+    display: flex;
+    width:inherit;
+}
+
+.userFoto{
+    display: flex;
+    align-items: center;
+    margin: 0 10px 0 5px;
+}
+
+.post{
+    display: block;
+    width: 100%;
+    
+}
+
+.post-info{
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start
+}
+
+.post-info-up{
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+}
+
+.post-info-down{
+    display: flex;
+    flex-direction: row;
+    align-items: center; 
+    justify-content: space-between;
+    width: 100%;
+    margin: 0 0 5px 0;
+}
+
+.name{
+    color: rgb(75, 75, 75);
+    font-size: 12px;
+    margin: 5px 0 10px 0;
+}
+
+.post-body{
+    color: rgb(0, 0, 0);
+    font-size: 16px;
+    padding-right: 10px;
+    margin: 0 0 10px 0;
+    text-align: justify;
+}
+
+.post-date{
+    color: rgb(75, 75, 75);
+    font-size: 12px;
+    margin: 0;
+    
+}
+
+.butt-del{
+   margin: 0 10px 0 0; 
+   background-color: transparent;
+   border: none;
+   cursor: pointer;
+   padding: 0;
+}
+
+.del-icon{
+    color: rgb(64, 113, 244);
+}
