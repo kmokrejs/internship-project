@@ -87,7 +87,7 @@ const Register = ({ history }) => {
                     </div>
                   </div>
 
-                    <button type="submit">Sign Up</button>
+                  <button type="submit" className="reg-butt">Sign Up</button>
                 </form>
                 <p>Already have account?<Link to="/login"> Log in</Link></p>
       </div>
