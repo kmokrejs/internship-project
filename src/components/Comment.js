@@ -12,11 +12,7 @@ import data from './Data'
 const Comment = () => {
 
     const [commentList, setCommentList] = useState([])
-    
-
-    // new post states
     const [newCommentBody, setNewCommentBody] = useState('')
-
 
     const commentsList = collection(db,"comments") // get firebase collection according its name
 
@@ -94,6 +90,12 @@ const Comment = () => {
         
     }
 
+    const getAuthor = (author) => {
+        let splited = author.split('@')
+        let authorRedo = splited[0]
+        return authorRedo
+    }
+
    
 
     return (
@@ -129,10 +131,11 @@ const Comment = () => {
                                 <div className="post-info">
                                     <div className="post-info-up">
                                         <p className='name'>@{post.author}</p>
+                                        <p className='name'>@{getAuthor(post.author)}</p>
                                         <p className='post-body'>{post.body}</p>
                                     </div>
                                     <div className="post-info-down">
-                                        <p className='date'>Posted: {post.postDate.toDate().toDateString()}</p>
+                                        <p className='post-date'>Posted: {post.postDate.toDate().toDateString()}</p>
                                         {auth.currentUser.email === post.author && <button title="Delete comment" className='butt-del' onClick={() => {deleteComm(post.id, post.author)}}><ImBin className='del-icon' size={15}/></button>}
                                         {/* <button onClick={() => {deleteComm(post.id, post.author)}} id='deleteBut'>Delete my post</button> */}
                                     </div>

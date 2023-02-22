@@ -2,7 +2,11 @@ import React, { useEffect, useState } from "react";
 import { auth } from './configuration/firebase'
 import { onAuthStateChanged } from 'firebase/auth'
 
-
+const style = {
+  color: 'white',
+  marginTop: '20px',
+  fontFamily: 'Roboto',
+}
 
 export const AuthContext = React.createContext();
 
@@ -18,7 +22,7 @@ export const AuthProvider = ({ children }) => {
   }, []);
 
   if(pending){
-    return <>Loading...</>
+    return <h2 style={style}>Loading...</h2>
   }
 
   return (
