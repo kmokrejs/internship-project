@@ -130,7 +130,7 @@ const Comment = () => {
                             <div className="post">
                                 <div className="post-info">
                                     <div className="post-info-up">
-                                        <p className='name'>@{post.author}</p>
+                                        {/* <p className='name'>@{post.author}</p> */}
                                         <p className='name'>@{getAuthor(post.author)}</p>
                                         <p className='post-body'>{post.body}</p>
                                     </div>
